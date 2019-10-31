@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="onetech.layout" template="/WEB-INF/templates/onetech/inc/master.jsp">
+		<!-- title -->
+		<put-attribute name="title" value="" />
+		
+		<!-- css -->
+		<put-attribute name="banner" value="" />
+		<put-attribute name="home" value="" />
+		<put-attribute name="shop" value="" />
+		<put-attribute name="blog" value="" />
+		<put-attribute name="cart" value="" />
+		<put-attribute name="contact" value="" />
+		<put-attribute name="index" value="" />
+	
+	
+		<!-- body -->
+		<put-attribute name="header" value="/WEB-INF/templates/onetech/inc/header.jsp" />
+		<put-attribute name="banner" value="" />
+		<put-attribute name="home" value="" />
+		<put-attribute name="shop" value="" />
+		<put-attribute name="blog" value="" />
+		<put-attribute name="cart" value="" />
+		<put-attribute name="contact" value="" />
+		<put-attribute name="index" value="" />
+		<put-attribute name="product" value="" />
+		<put-attribute name="recently_viewed" value="" />
+		<put-attribute name="brands" value="" />
+		<put-attribute name="newsletter" value="/WEB-INF/templates/onetech/inc/newsletter.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/templates/onetech/inc/footer.jsp" />
+		<put-attribute name="copyright" value="/WEB-INF/templates/onetech/inc/copyright.jsp" />
+	</definition>
+	
+	<!-- blog -->
+	<definition name="onetech.blog" extends="onetech.layout">
+		<put-attribute name="title" value="Blog" />
+		<put-attribute name="home" value="/WEB-INF/templates/onetech/inc/home_blog.jsp" />
+		<put-attribute name="blog" value="/WEB-INF/views/onetech/blog.jsp" />
+	</definition>
+	
+	<!-- blog_post -->
+	<definition name="onetech.blog_post" extends="onetech.layout">
+		<put-attribute name="title" value="Blog post" />
+		<put-attribute name="home" value="/WEB-INF/templates/onetech/inc/home_blog_post.jsp" />
+		<put-attribute name="blog" value="/WEB-INF/views/onetech/blog_post.jsp" />
+	</definition>
+	
+	<!-- cart -->
+	<definition name="onetech.cart" extends="onetech.layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="cart" value="/WEB-INF/views/onetech/cart.jsp" />
+	</definition>
+	
+	<!-- contact -->
+	<definition name="onetech.contact" extends="onetech.layout">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="contact" value="/WEB-INF/views/onetech/contact.jsp" />
+	</definition>
+	
+	<!-- index -->
+	<definition name="onetech.index" extends="onetech.layout">
+		<put-attribute name="title" value="Onetech" />
+		<put-attribute name="recently_viewed" value="/WEB-INF/templates/onetech/inc/recently_viewed.jsp" />
+		<put-attribute name="brands" value="/WEB-INF/templates/onetech/inc/brands.jsp" />
+		<put-attribute name="index" value="/WEB-INF/views/onetech/index.jsp" />
+	</definition>
+	
+	<!-- product -->
+	<definition name="onetech.product" extends="onetech.layout">
+		<put-attribute name="title" value="Product" />
+		<put-attribute name="recently_viewed" value="/WEB-INF/templates/onetech/inc/recently_viewed.jsp" />
+		<put-attribute name="brands" value="/WEB-INF/templates/onetech/inc/brands.jsp" />
+		<put-attribute name="product" value="/WEB-INF/views/onetech/product.jsp" />
+	</definition>
+	
+	<!-- shop -->
+	<definition name="onetech.shop" extends="onetech.layout">
+		<put-attribute name="recently_viewed" value="/WEB-INF/templates/onetech/inc/recently_viewed.jsp" />
+		<put-attribute name="brands" value="/WEB-INF/templates/onetech/inc/brands.jsp" />
+		<put-attribute name="shop" value="/WEB-INF/views/onetech/shop.jsp" />
+	</definition>
+
+
+</tiles-definitions>
